@@ -25,11 +25,11 @@ public class Admin {
     public Admin(){
 
     }
-    public Admin(Integer id, String username, String password, List<ServiceProvider> serviceProviderList) {
+    public Admin(Integer id, String username, String password, List<ServiceProvider> serviceProviders) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.serviceProviderList = serviceProviderList;
+        this.serviceProviderList = serviceProviders;
     }
 
     public Integer getId() {
