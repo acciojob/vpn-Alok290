@@ -19,9 +19,7 @@ public class Connection {
     private User user;
 
     public Connection() {
-        id = id;
-        this.serviceProvider = serviceProvider;
-        this.user = user;
+
     }
 
     public Integer getId() {

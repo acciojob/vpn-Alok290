@@ -23,14 +23,14 @@ public class User {
 
     private Boolean connected = false;
 
-    //user as parent in oneonone
+
     @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
     private Country originalCountry;
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
     List<Connection> connectionList = new ArrayList<>();
 
-    //service provider as parent in manytomany
+
     @ManyToMany
     @JoinColumn
     List<ServiceProvider> serviceProviderList = new ArrayList<>();
