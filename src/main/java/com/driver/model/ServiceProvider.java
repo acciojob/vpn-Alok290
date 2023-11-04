@@ -23,7 +23,7 @@ public class ServiceProvider {
 
     @ManyToMany
     @JoinColumn
-    private List<User> userList = new ArrayList<>();
+    private List<User> users = new ArrayList<>();
 
 
 
@@ -38,11 +38,11 @@ public class ServiceProvider {
 
     }
 
-    public ServiceProvider(Integer id, String name, Admin admin, List<User> userList, List<Connection> connectionList, List<Country> countryList) {
+    public ServiceProvider(Integer id, String name, Admin admin, List<User> users, List<Connection> connectionList, List<Country> countryList) {
         Id = id;
         this.name = name;
         this.admin = admin;
-        this.userList = userList;
+        this.users = users;
         this.connectionList = connectionList;
         this.countryList = countryList;
     }
@@ -71,12 +71,12 @@ public class ServiceProvider {
         this.admin = admin;
     }
 
-    public List<User> getUserList() {
-        return userList;
+    public List<User> getUsers() {
+        return users;
     }
 
-    public void setUserList(List<User> userList) {
-        this.userList = userList;
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 
     public List<Connection> getConnectionList() {
