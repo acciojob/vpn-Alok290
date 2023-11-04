@@ -13,7 +13,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String userName;
+    private String username;
 
     private String password;
 
@@ -39,9 +39,9 @@ public class User {
 
     }
 
-    public User(Integer id, String userName, String password, String originalIp, String maskedIp, boolean connected, List<ServiceProvider> serviceProviderList, Country originalCountry, List<Connection> connectionList) {
+    public User(Integer id, String username, String password, String originalIp, String maskedIp, boolean connected, List<ServiceProvider> serviceProviderList, Country originalCountry, List<Connection> connectionList) {
         this.id = id;
-        this.userName = userName;
+        this.username = username;
         this.password = password;
         this.originalIp = originalIp;
         this.maskedIp = maskedIp;
@@ -59,12 +59,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

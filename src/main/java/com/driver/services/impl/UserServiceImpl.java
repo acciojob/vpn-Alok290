@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
 
         User user = new User();
-        user.setUserName(username);
+        user.setUsername(username);
         user.setPassword(password);
         user.setConnected(false);
 
